@@ -1,9 +1,9 @@
 def listoverlap(list1, list2):
-    return
+    return list(set(list1) & set(list2))
 
 
 def main():
-    return
+    return listoverlap()
 
 
 if __name__ == '__main__':
