@@ -2,9 +2,7 @@ import datetime
 
 
 def years(x):
-    now_year = 2016
-    witch_year = now_year + (100 - x)
-    return witch_year
+    return datetime.datetime.now().year + (100 - x)
 
 
 def main():
@@ -13,3 +11,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+# now = datetime.datetime.now().year
+#
+# print(now)
