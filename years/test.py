@@ -1,7 +1,6 @@
 import unittest
 from years_module import years
 
-
 # Here's our "unit tests".
 
 
@@ -13,6 +12,11 @@ class YearsTestCase(unittest.TestCase):
 
 
 def main():
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    now_year = 2016
+    result = now_year + (100 - age)
+    print("Hi", name, "in ", result, "you will be 100 years old.")
     unittest.main()
 
 
