@@ -14,9 +14,10 @@ class YearsTestCase(unittest.TestCase):
 def main():
     name = input("Enter your name: ")
     age = int(input("Enter your age: "))
+    # If here I use datetime function, the test doen't working...
     now_year = 2016
     result = now_year + (100 - age)
-    print("Hi", name, "in ", result, "you will be 100 years old.")
+    print("Hi", name, ", you will be 100 years old", "in ", result)
     unittest.main()
 
 
