@@ -1,3 +1,6 @@
+# [::-1] - reverse the word
+
+
 def palindrome(word):
     return word.lower().replace(" ", "") == word.lower()[::-1].replace(" ", "")
 
