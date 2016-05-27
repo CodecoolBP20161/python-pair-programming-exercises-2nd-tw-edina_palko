@@ -1,20 +1,21 @@
-# def passwordgen():
-#     return
-#
-#
-# def main():
-#     return
-#
-#
-# if __name__ == '__main__':
-#     main()
-
 import string
 import random
 
-def randompassword():
-    chars = string.unicode_uppercase + string.unicode_lowercase + string.digits
-    size = 4
-    return ''.join(random.choice(chars) for x in range(size,12))
 
-print(randompassword())
+def passwordgen():
+    spec = ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "?"]
+    lower = string.ascii_lowercase
+    upper = string.ascii_uppercase
+    number = string.digits
+    password_test = ''.join(random.choice(spec) + random.choice(lower) + random.choice(upper) + random.choice(number) for x in range(0, 2))
+    return password_test
+
+
+def main():
+    return
+
+
+if __name__ == '__main__':
+    main()
+
+# ''.join(string.ascii_letters + string.digits +for x in range(size, 8))
