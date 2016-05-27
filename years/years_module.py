@@ -1,8 +1,10 @@
 import datetime
 
 
-def years(age):
-    return
+def years(x):
+    now_year = 2016
+    witch_year = now_year + (100 - x)
+    return witch_year
 
 
 def main():
